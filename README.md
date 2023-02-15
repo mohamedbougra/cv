@@ -1,4 +1,4 @@
-2 project (mage-filter-starter-code)
+2nd project (mage-filter-starter-code)
 
 http://image-filter-starter-code2-dev.us-east-1.elasticbeanstalk.com/
 
