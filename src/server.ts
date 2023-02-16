@@ -4,7 +4,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 import {Request, Response} from 'express';
 
 
-
 (async () => {
 
   // Init the Express application
@@ -30,7 +29,7 @@ import {Request, Response} from 'express';
   // RETURNS
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
   app.get("/filteredimage", async (req: Request, res: Response) => {
-    const image_url = req.query.image_url;
+    const image_url:string = req.query.image_url;
     if (!image_url) {
       // if we don't find an image_url query parameter in the request we sen a 400 status 
       return res.status(400).send('you shouls give  a valid url ');
